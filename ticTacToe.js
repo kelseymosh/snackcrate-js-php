@@ -3,7 +3,7 @@
     //Key and example Values In the GET
         //XY='0,3'
         //turn=x
-        
+
 let boardSize = 3
 const board = document.getElementById("board")
 
@@ -13,8 +13,3 @@ const createRows = (boardSize) => {
         board.append(div).className = "square"
     }
 }
-
-const createColumns = (boardSize) => {
-
-}
-
