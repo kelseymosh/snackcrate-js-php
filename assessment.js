@@ -5,13 +5,13 @@ const manipulatePhoneNumber = (phoneNumber) => {
     let numbers = phoneNumber.replace(/[^0-9]/g, '')
     return (numbers.length > 10) ? numbers.slice(1) : numbers
 }
-// console.log(manipulatePhoneNumber("+1 (813)-416-5555")) 
+console.log(manipulatePhoneNumber("+1 (813)-416-5555")) 
 
 
 //Write a function to display an html form on a client side interface.
     //Form values will be First Name, Last Name, Zip Code, Email Address 
 const createForm = () => {
-    const form = document.querySelector('form')
+    const form = document.createElement('form')
     const firstName = document.createElement('input')
     firstName.value = 'First Name'
 
@@ -27,6 +27,7 @@ const createForm = () => {
     const submit = document.createElement('input')
     submit.setAttribute('type', 'submit')
     form.append(firstName, lastName, zipCode, emailAddress, submit)
+    document.body.append(form)
 }
 createForm()
 
