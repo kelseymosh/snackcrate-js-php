@@ -5,7 +5,6 @@ const manipulatePhoneNumber = (phoneNumber) => {
     let numbers = phoneNumber.replace(/[^0-9]/g, '')
     return (numbers.length > 10) ? numbers.slice(1) : numbers
 }
-console.log(manipulatePhoneNumber("+1 (813)-416-5555")) 
 
 
 //Write a function to display an html form on a client side interface.
@@ -40,4 +39,3 @@ const moveZeros = (array) => {
     array.forEach(element => (element === 0) ? zeros.push(element): nonZeros.push(element))
     return nonZeros.concat(zeros)
 }
-// console.log(moveZeros([false,1,0,1,2,0,1,3,"a"]))
