@@ -6,7 +6,6 @@ const manipulatePhoneNumber = (phoneNumber) => {
     return (numbers.length > 10) ? numbers.slice(1) : numbers
 }
 
-
 //Write a function to display an html form on a client side interface.
     //Form values will be First Name, Last Name, Zip Code, Email Address 
 const createForm = () => {
