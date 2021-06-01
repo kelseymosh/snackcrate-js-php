@@ -16,7 +16,7 @@ echo $_SERVER['HTTP_CLIENT_IP'] ? : ($_SERVER['HTTP_X_FORWARDED_FOR'] ? : $_SERV
 
 <!-- //Write a function to get today's date in this format "2014-02-13 02:42:48" -->
 <?php
-  date_default_timezone_set("America/Denver");
-  $currentDateTime = date('Y-m-d H:i:s');
-  echo $currentDateTime;
+date_default_timezone_set("America/Denver");
+$currentDateTime = date('Y-m-d H:i:s');
+echo $currentDateTime;
 ?>
